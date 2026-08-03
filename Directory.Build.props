@@ -1,0 +1,16 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+    <!--
+      These APIs are all still marked experimental/evaluation-only and would otherwise be
+      build errors. Expect them to move between MAF versions:
+        OPENAI001 - Responses API and hosted tools (web search, code interpreter)
+        MEAI001   - parts of Microsoft.Extensions.AI
+        MAAI001   - Agent Harness and Hyperlight CodeAct
+    -->
+    <NoWarn>$(NoWarn);OPENAI001;MEAI001;MAAI001</NoWarn>
+  </PropertyGroup>
+</Project>

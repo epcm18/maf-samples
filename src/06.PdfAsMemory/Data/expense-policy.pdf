@@ -1,0 +1,48 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 1130 >>
+stream
+BT
+/F1 18 Tf 1 0 0 1 60 760 Tm (MafLab Expense Policy \(fictional\)) Tj
+/F1 13 Tf 1 0 0 1 60 725 Tm (1. Daily allowance) Tj
+/F1 11 Tf 1 0 0 1 60 705 Tm (Employees travelling within the EU receive 65 EUR per day.) Tj
+/F1 11 Tf 1 0 0 1 60 690 Tm (Travel outside the EU is reimbursed at 95 EUR per day.) Tj
+/F1 13 Tf 1 0 0 1 60 655 Tm (2. Accommodation) Tj
+/F1 11 Tf 1 0 0 1 60 635 Tm (Hotels are capped at 180 EUR per night in capital cities,) Tj
+/F1 11 Tf 1 0 0 1 60 620 Tm (and 120 EUR per night elsewhere.) Tj
+/F1 13 Tf 1 0 0 1 60 585 Tm (3. Approval) Tj
+/F1 11 Tf 1 0 0 1 60 565 Tm (Any single expense above 500 EUR requires written approval) Tj
+/F1 11 Tf 1 0 0 1 60 550 Tm (from the department manager before the expense is incurred.) Tj
+/F1 13 Tf 1 0 0 1 60 515 Tm (4. Deadline) Tj
+/F1 11 Tf 1 0 0 1 60 495 Tm (Expense claims must be submitted within 30 days of the trip.) Tj
+/F1 11 Tf 1 0 0 1 60 480 Tm (Claims submitted after 60 days are rejected without exception.) Tj
+/F1 13 Tf 1 0 0 1 60 445 Tm (5. Non-reimbursable) Tj
+/F1 11 Tf 1 0 0 1 60 425 Tm (Alcohol, fines, and in-flight entertainment are never reimbursed.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001423 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1493
+%%EOF

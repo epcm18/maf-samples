@@ -1,0 +1,26 @@
+<Solution>
+  <Folder Name="/_shared/">
+    <Project Path="src/Shared/Shared.csproj" />
+  </Folder>
+  <Folder Name="/Tools and multi-agent/">
+    <Project Path="src/01.ToolMiddleware/ToolMiddleware.csproj" />
+    <Project Path="src/02.AgentAsTool/AgentAsTool.csproj" />
+  </Folder>
+  <Folder Name="/Hosted tools (Responses API)/">
+    <Project Path="src/03.WebSearchTool/WebSearchTool.csproj" />
+    <Project Path="src/04.CodeInterpreter/CodeInterpreter.csproj" />
+  </Folder>
+  <Folder Name="/Model behaviour and input/">
+    <Project Path="src/05.ReasoningEffort/ReasoningEffort.csproj" />
+    <Project Path="src/06.PdfAsMemory/PdfAsMemory.csproj" />
+  </Folder>
+  <Folder Name="/Cost and scale/">
+    <Project Path="src/07.AiAsFilter/AiAsFilter.csproj" />
+    <Project Path="src/08.PromptCaching/PromptCaching.csproj" />
+    <Project Path="src/09.BatchJobs/BatchJobs.csproj" />
+  </Folder>
+  <Folder Name="/Frontier/">
+    <Project Path="src/11.AgentHarness/AgentHarness.csproj" />
+    <Project Path="src/12.CodeActHyperlight/CodeActHyperlight.csproj" />
+  </Folder>
+</Solution>

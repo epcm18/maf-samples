@@ -21,7 +21,9 @@ public static class Out
     public static void Separator()
     {
         System.Console.WriteLine();
-        Write(new string('-', Math.Min(System.Console.WindowWidth, 100)), ConsoleColor.DarkGray);
+        // WindowWidth throws when output is redirected (piped to a file, CI, an IDE pane).
+        int width = System.Console.IsOutputRedirected ? 100 : Math.Min(System.Console.WindowWidth, 100);
+        Write(new string('-', width), ConsoleColor.DarkGray);
         System.Console.WriteLine();
     }
 

@@ -3,6 +3,8 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
   <ItemGroup>
+    <PackageVersion Include="Microsoft.AgentGovernance" Version="5.0.0" />
+    <PackageVersion Include="Microsoft.AgentGovernance.Extensions.Microsoft.Agents" Version="5.0.0" />
     <PackageVersion Include="Microsoft.Agents.AI" Version="1.15.0" />
     <PackageVersion Include="Microsoft.Agents.AI.OpenAI" Version="1.15.0" />
     <PackageVersion Include="Microsoft.Agents.AI.Harness" Version="1.15.0" />

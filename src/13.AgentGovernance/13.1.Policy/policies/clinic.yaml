@@ -1,0 +1,15 @@
+# Both doctors share the same tools. Tool wiring cannot tell them apart per ward -
+# this rule can, because it reads the ward argument of the call.
+#
+# agent_did comes from the agent name: "LadyDoctor" -> did:agentmesh:ladydoctor, which the
+# engine normalises to did:mesh:ladydoctor before evaluating. Write the did:mesh: form here -
+# the did:agentmesh: form silently never matches.
+apiVersion: governance.toolkit/v1
+version: "1.0"
+name: clinic-policy
+default_action: allow
+rules:
+  - name: lady-doctor-female-ward-only
+    condition: "tool_name == 'get_medical_report' and agent_did == 'did:mesh:ladydoctor' and ward != 'Female Ward'"
+    action: deny
+    priority: 100

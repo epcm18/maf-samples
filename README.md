@@ -1,7 +1,8 @@
 # maf-samples
 
-A small hands-on repo for the Microsoft Agent Framework topics that were new to me in
-Rasmus' Udemy course *AI in C# using the Microsoft Agent Framework*.
+A small hands-on repo of the Microsoft Agent Framework topics which has quite unique samples adapted from
+Rasmus' Udemy course *AI in C# using the Microsoft Agent Framework* and my own experiments with the framework
+and agentic topics.
 
 The course repo covers everything; this one covers only the parts I highlighted in my notes,
 one runnable console project each, wired to **OpenAI direct**.
@@ -57,11 +58,12 @@ open `Program.cs`, read the comment block at the top, then run it and watch the 
 | 09 | [BatchJobs](src/09.BatchJobs) | Batch API | ~50% cheaper, up to 24h, **no tool calling**. Sits below the agent abstraction entirely |
 | 11 | [AgentHarness](src/11.AgentHarness) | `AsHarnessAgent()` | Todos, plan/execute modes, background subagents, compaction, file memory — all on by default. This is the "build your own Copilot" piece |
 | 12 | [CodeActHyperlight](src/12.CodeActHyperlight) | CodeAct + Hyperlight sandbox | One `execute_code` tool replaces N tools. Your C# tools go *inside* the sandbox options so generated code can call them |
+| 13.1 | [AGT Policy](src/13.AgentGovernance/13.1.Policy) | Agent Governance Toolkit: a YAML policy | Agents checks the policy before act on with it's tools  |
 
 Numbers match my notes, so there are gaps. Nothing is missing.
 
 A reasonable order if you are working through them: 01 and 02 for the mechanics, 07 to 09 for
-the cost thinking, then 11 and 12 for the frontier bits. 03 to 06 are self-contained and can be
+the cost thinking, then 11 to 13 for the frontier bits. 03 to 06 are self-contained and can be
 read in any order.
 
 ## Things worth remembering

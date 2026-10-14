@@ -14,6 +14,9 @@
     <Project Path="src/05.ReasoningEffort/ReasoningEffort.csproj" />
     <Project Path="src/06.PdfAsMemory/PdfAsMemory.csproj" />
   </Folder>
+  <Folder Name="/Agent Governance (AGT)/">
+    <Project Path="src/13.AgentGovernance/13.1.Policy/AgtPolicy.csproj" />
+  </Folder>
   <Folder Name="/Cost and scale/">
     <Project Path="src/07.AiAsFilter/AiAsFilter.csproj" />
     <Project Path="src/08.PromptCaching/PromptCaching.csproj" />

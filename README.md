@@ -7,6 +7,7 @@ The course repo covers everything; this one covers only the parts I highlighted 
 one runnable console project each, wired to **OpenAI direct**.
 
 - Microsoft Agent Framework **1.15.0**
+- OpenAI .NET SDK **2.15.0** (14 needs the Decisions client that arrived in 2.15)
 - .NET **10**
 - OpenAI API (some samples need the Responses API, which Azure OpenAI does not support)
 
@@ -57,6 +58,7 @@ open `Program.cs`, read the comment block at the top, then run it and watch the 
 | 09 | [BatchJobs](src/09.BatchJobs) | Batch API | ~50% cheaper, up to 24h, **no tool calling**. Sits below the agent abstraction entirely |
 | 11 | [AgentHarness](src/11.AgentHarness) | `AsHarnessAgent()` | Todos, plan/execute modes, background subagents, compaction, file memory — all on by default. This is the "build your own Copilot" piece |
 | 12 | [CodeActHyperlight](src/12.CodeActHyperlight) | CodeAct + Hyperlight sandbox | One `execute_code` tool replaces N tools. Your C# tools go *inside* the sandbox options so generated code can call them |
+| 14 | [DecisionApi](src/14.DecisionApi) | OpenAI Decisions API | Probabilities, not prose: predicate / choice / score questions over text or images, up to 400 per call. `OpenAIClient.GetDecisionsClient()` (OpenAI 2.15+, `OPENAI001`). MAF is not involved in the call - it sits beside the agent, not inside it. Needs `gpt-6-luna` |
 
 Numbers match my notes, so there are gaps. Nothing is missing.
 

@@ -22,5 +22,6 @@
   <Folder Name="/Frontier/">
     <Project Path="src/11.AgentHarness/AgentHarness.csproj" />
     <Project Path="src/12.CodeActHyperlight/CodeActHyperlight.csproj" />
+    <Project Path="src/14.DecisionApi/DecisionApi.csproj" />
   </Folder>
 </Solution>

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AgentGovernance" />
+    <PackageReference Include="Microsoft.Agents.AI.OpenAI" />
+    <PackageReference Include="OpenAI" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\Shared.csproj" />
+    <ProjectReference Include="..\McpMock\McpMock.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- The Layer 1 port lives with 13.2.1, where it is introduced. -->
+    <Compile Include="..\13.2.1.TrustProxy\TrustProxy.cs" Link="TrustProxy.cs" />
+  </ItemGroup>
+</Project>

@@ -59,6 +59,9 @@ open `Program.cs`, read the comment block at the top, then run it and watch the 
 | 11 | [AgentHarness](src/11.AgentHarness) | `AsHarnessAgent()` | Todos, plan/execute modes, background subagents, compaction, file memory — all on by default. This is the "build your own Copilot" piece |
 | 12 | [CodeActHyperlight](src/12.CodeActHyperlight) | CodeAct + Hyperlight sandbox | One `execute_code` tool replaces N tools. Your C# tools go *inside* the sandbox options so generated code can call them |
 | 13.1 | [AGT Policy](src/13.AgentGovernance/13.1.Policy) | Agent Governance Toolkit: a YAML policy | Agents checks the policy before act on with it's tools  |
+| 13.2.1 | [AGT MCP Trust Proxy](src/13.AgentGovernance/13.2.Mcp/13.2.1.TrustProxy) | AGT MCP trust guide, Layer 1 | Same MCP tools, different callers: DID, trust score and capabilities decide. A denied call never reaches the MCP server. `McpMock` is the in-process MCP server every 13.2.x sample uses |
+| 13.2.2 | [AGT MCP Runtime Control](src/13.AgentGovernance/13.2.Mcp/13.2.2.RuntimeControl) | Changing the proxy while agents run | Rate limit fills up, a DID is blocked mid-session, a policy is tightened - the agent is never rebuilt. The audit log at the end shows every decision |
+| 13.2.3 | [MCP Tool Filtering](src/13.AgentGovernance/13.2.Mcp/13.2.3.ToolFiltering) | Filter up front vs deny at call time | Hand the model only the tools the caller may use, and it never tries. But the filter is a snapshot - a block after the agent is built only the call-time check sees |
 
 Numbers match my notes, so there are gaps. Nothing is missing.
 
@@ -84,4 +87,4 @@ numbers. Bump there.
 
 Deliberately skipped, since the course repo already does them well and they were not new to me:
 provider setup for Azure / Foundry / Ollama, basic tool calling, structured output on its own,
-RAG, workflows, telemetry, MCP.
+RAG, workflows, telemetry, plain MCP (13.2 uses MCP, but for the governance on top of it).

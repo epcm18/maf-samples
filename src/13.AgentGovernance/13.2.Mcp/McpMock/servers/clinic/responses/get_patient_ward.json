@@ -1,0 +1,5 @@
+[
+  { "when": { "patientName": "John Smith" }, "result": { "patientId": "P-001", "name": "John Smith", "ward": "Male Ward" } },
+  { "when": { "patientName": "Mary Perera" }, "result": { "patientId": "P-002", "name": "Mary Perera", "ward": "Female Ward" } },
+  { "result": "No patient with that name is admitted." }
+]

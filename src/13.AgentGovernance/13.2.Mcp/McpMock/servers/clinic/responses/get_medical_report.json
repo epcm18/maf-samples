@@ -1,0 +1,10 @@
+[
+  {
+    "when": { "ward": "Male Ward" },
+    "result": { "ward": "Male Ward", "patients": [ { "patientId": "P-001", "name": "John Smith", "bloodPressure": "120/80", "heartRate": 72 } ] }
+  },
+  {
+    "when": { "ward": "Female Ward" },
+    "result": { "ward": "Female Ward", "patients": [ { "patientId": "P-002", "name": "Mary Perera", "bloodPressure": "110/70", "heartRate": 75 } ] }
+  }
+]

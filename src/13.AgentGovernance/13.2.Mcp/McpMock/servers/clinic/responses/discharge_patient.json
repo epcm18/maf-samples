@@ -1,0 +1,5 @@
+[
+  { "when": { "patientId": "P-001" }, "result": { "status": "discharged", "patientId": "P-001" } },
+  { "when": { "patientId": "P-002" }, "result": { "status": "discharged", "patientId": "P-002" } },
+  { "result": "Error: unknown patient ID." }
+]

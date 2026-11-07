@@ -1,0 +1,50 @@
+{
+  "tools": [
+    {
+      "name": "get_patient_ward",
+      "description": "Gets the ward a patient is admitted to.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "patientName": { "type": "string", "description": "Full name of the patient." }
+        },
+        "required": [ "patientName" ]
+      }
+    },
+    {
+      "name": "get_medical_report",
+      "description": "Gets the latest medical report of a ward.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "ward": { "type": "string", "enum": [ "Male Ward", "Female Ward" ] }
+        },
+        "required": [ "ward" ]
+      }
+    },
+    {
+      "name": "prescribe_medication",
+      "description": "Adds a medication to a patient's prescription.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "patientId": { "type": "string", "description": "Patient ID, for example P-001." },
+          "medication": { "type": "string" },
+          "dose": { "type": "string", "description": "Dose and frequency, for example 500 mg twice a day." }
+        },
+        "required": [ "patientId", "medication", "dose" ]
+      }
+    },
+    {
+      "name": "discharge_patient",
+      "description": "Discharges a patient from the clinic. This cannot be undone.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "patientId": { "type": "string", "description": "Patient ID, for example P-001." }
+        },
+        "required": [ "patientId" ]
+      }
+    }
+  ]
+}

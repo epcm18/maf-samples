@@ -16,6 +16,10 @@
   </Folder>
   <Folder Name="/Agent Governance (AGT)/">
     <Project Path="src/13.AgentGovernance/13.1.Policy/AgtPolicy.csproj" />
+    <Project Path="src/13.AgentGovernance/13.2.Mcp/McpMock/McpMock.csproj" />
+    <Project Path="src/13.AgentGovernance/13.2.Mcp/13.2.1.TrustProxy/McpTrustProxy.csproj" />
+    <Project Path="src/13.AgentGovernance/13.2.Mcp/13.2.2.RuntimeControl/McpRuntimeControl.csproj" />
+    <Project Path="src/13.AgentGovernance/13.2.Mcp/13.2.3.ToolFiltering/McpToolFiltering.csproj" />
   </Folder>
   <Folder Name="/Cost and scale/">
     <Project Path="src/07.AiAsFilter/AiAsFilter.csproj" />

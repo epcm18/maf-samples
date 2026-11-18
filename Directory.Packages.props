@@ -7,6 +7,12 @@
     <PackageVersion Include="Microsoft.Agents.AI.OpenAI" Version="1.15.0" />
     <PackageVersion Include="Microsoft.Agents.AI.Harness" Version="1.15.0" />
     <PackageVersion Include="Microsoft.Agents.AI.Hyperlight" Version="1.15.0-preview.260722.1" />
+    <!--
+      MAF 1.15 brings in Microsoft.Extensions.AI.OpenAI 10.6.0, built against OpenAI 2.10. OpenAI 2.13+
+      removed GlobalMcpToolCallApprovalPolicy, so HostedMcpServerTool throws TypeLoadException on 2.15.
+      10.10.1 is built against OpenAI 2.14. Only 15 references it directly, so only 15 gets it.
+    -->
+    <PackageVersion Include="Microsoft.Extensions.AI.OpenAI" Version="10.10.1" />
     <PackageVersion Include="Microsoft.Extensions.Configuration.UserSecrets" Version="10.0.10" />
     <PackageVersion Include="Microsoft.Extensions.Hosting" Version="10.0.10" />
     <PackageVersion Include="ModelContextProtocol" Version="1.4.1" />

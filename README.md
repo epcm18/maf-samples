@@ -59,6 +59,7 @@ open `Program.cs`, read the comment block at the top, then run it and watch the 
 | 11 | [AgentHarness](src/11.AgentHarness) | `AsHarnessAgent()` | Todos, plan/execute modes, background subagents, compaction, file memory — all on by default. This is the "build your own Copilot" piece |
 | 12 | [CodeActHyperlight](src/12.CodeActHyperlight) | CodeAct + Hyperlight sandbox | One `execute_code` tool replaces N tools. Your C# tools go *inside* the sandbox options so generated code can call them |
 | 14 | [DecisionApi](src/14.DecisionApi) | OpenAI Decisions API | Probabilities, not prose: predicate / choice / score questions over text or images, up to 400 per call. `OpenAIClient.GetDecisionsClient()` (OpenAI 2.15+, `OPENAI001`). MAF is not involved in the call - it sits beside the agent, not inside it. Needs `gpt-6-luna` |
+| 15 | [PiiRedaction](src/15.PiiRedaction) | Azure Language MCP for PII | Hosted MCP tool: the model still sees raw text. Middleware: the model never does. Key in `appsettings.json` |
 
 Numbers match my notes, so there are gaps. Nothing is missing.
 
@@ -84,4 +85,4 @@ numbers. Bump there.
 
 Deliberately skipped, since the course repo already does them well and they were not new to me:
 provider setup for Azure / Foundry / Ollama, basic tool calling, structured output on its own,
-RAG, workflows, telemetry, MCP.
+RAG, workflows, telemetry, and MCP beyond the Azure Language server in 15.

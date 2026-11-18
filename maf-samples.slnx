@@ -19,6 +19,9 @@
     <Project Path="src/08.PromptCaching/PromptCaching.csproj" />
     <Project Path="src/09.BatchJobs/BatchJobs.csproj" />
   </Folder>
+  <Folder Name="/Safety and privacy/">
+    <Project Path="src/15.PiiRedaction/PiiRedaction.csproj" />
+  </Folder>
   <Folder Name="/Frontier/">
     <Project Path="src/11.AgentHarness/AgentHarness.csproj" />
     <Project Path="src/12.CodeActHyperlight/CodeActHyperlight.csproj" />

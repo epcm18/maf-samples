@@ -60,6 +60,7 @@ open `Program.cs`, read the comment block at the top, then run it and watch the 
 | 12 | [CodeActHyperlight](src/12.CodeActHyperlight) | CodeAct + Hyperlight sandbox | One `execute_code` tool replaces N tools. Your C# tools go *inside* the sandbox options so generated code can call them |
 | 14 | [DecisionApi](src/14.DecisionApi) | OpenAI Decisions API | Probabilities, not prose: predicate / choice / score questions over text or images, up to 400 per call. `OpenAIClient.GetDecisionsClient()` (OpenAI 2.15+, `OPENAI001`). MAF is not involved in the call - it sits beside the agent, not inside it. Needs `gpt-6-luna` |
 | 15 | [PiiRedaction](src/15.PiiRedaction) | Azure Language MCP for PII | Hosted MCP tool: the model still sees raw text. Middleware: the model never does. Key in `appsettings.json` |
+| 16 | [AzureSpeechSsml](src/16.AzureSpeechSsml) | An agent's voice as an SSML file | Instructions decide what the agent says, the SSML file (voice, rate, pitch, pauses) decides how it sounds. Reply goes into the file's `{{text}}`, Speech SDK writes a `.wav` to `./output`. Pass your own `.xml` to swap voices. Key in `appsettings.json` |
 
 Numbers match my notes, so there are gaps. Nothing is missing.
 

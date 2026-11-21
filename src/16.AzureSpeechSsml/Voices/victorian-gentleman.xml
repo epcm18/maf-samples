@@ -1,0 +1,25 @@
+<!--
+  An old English gentleman out of a Victorian novel.
+
+  The SSML decides how the words SOUND; the agent's instructions decide what it SAYS.
+  {{text}} is replaced with the agent's reply (XML-escaped) before it is spoken.
+
+  - voice    en-GB-RyanNeural: a British (RP) male voice. Azure has no regional or period
+             accents, so "old" comes from the delivery below and the agent's wording.
+  - prosody  slower and lower, like an elderly speaker.
+  - break    a pause after the opening "Ahem", before he gets going.
+
+  Make your own: copy this file, change the voice and prosody, and pass its path to the sample.
+  Voice list: https://learn.microsoft.com/azure/ai-services/speech-service/language-support?tabs=tts
+-->
+<speak version="1.0"
+       xmlns="http://www.w3.org/2001/10/synthesis"
+       xmlns:mstts="https://www.w3.org/2001/mstts"
+       xml:lang="en-GB">
+  <voice name="en-GB-RyanNeural">
+    <prosody rate="-12%" pitch="-8%">
+      Ahem. <break time="600ms"/>
+      {{text}}
+    </prosody>
+  </voice>
+</speak>

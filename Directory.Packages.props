@@ -13,6 +13,7 @@
       10.10.1 is built against OpenAI 2.14. Only 15 references it directly, so only 15 gets it.
     -->
     <PackageVersion Include="Microsoft.Extensions.AI.OpenAI" Version="10.10.1" />
+    <PackageVersion Include="Microsoft.CognitiveServices.Speech" Version="1.53.1" />
     <PackageVersion Include="Microsoft.Extensions.Configuration.UserSecrets" Version="10.0.10" />
     <PackageVersion Include="Microsoft.Extensions.Hosting" Version="10.0.10" />
     <PackageVersion Include="ModelContextProtocol" Version="1.4.1" />
